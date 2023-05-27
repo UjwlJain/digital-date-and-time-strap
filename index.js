@@ -28,6 +28,9 @@ function updatetime() {
     let h = now.getHours();
     let m = now.getMinutes();
 
+    h = (h < 10 ? "0" : "") + h;
+    m = (m < 10 ? "0" : "") + m;
+
 hourEl.innerText = h;
 minuteEl.innerText = m;
 
